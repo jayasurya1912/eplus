@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+
+ <div class="topbar">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        
+      </div>
+      <div class="social-icons">
+        <i class="fa-solid fa-location-dot"></i> PO.BOX: 81262, AL QUSAIS, DUBAI, UAE
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom" >
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="images/mainlogo.png" alt="Logo">
+      </a>
+
+      <!-- Mobile Sidebar Trigger -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Desktop Menu -->
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">SERVICES</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="greenhouseinstallationservice.html">GreenHouse Installation Service</a></li>
+              <li><a class="dropdown-item" href="firefightiningservice.html">FIRE FIGHTING SERVICES</a></li>
+              <li><a class="dropdown-item" href="#">Service 3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">PROJECTS</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Sidebar Menu -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">E PLUS</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">SERVICES</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="greenhouseinstallationservice.html">GreenHouse Installation Service</a></li>
+            <li><a class="dropdown-item" href="firefightiningservice.html">FIRE FIGHTING SERVICES</a></li>
+            <li><a class="dropdown-item" href="#">Service 3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">PROJECTS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <section class="green-banner">
+    <h1>GREENHOUSE <br> INSTALLATION SERVICES</h1>
+  </section>
+
+
+  <div class="container-fluid" style="margin-top: -3rem;">
+  <div class="row content-section">
+    
+    <!-- Left Image -->
+    <div class="col-md-6 p-0">
+      <img src="images/greenabtn.jpg" class="img-fluid w-100 h-100" alt="Greenhouse Installation">
+    </div>
+    
+    <!-- Right Content -->
+    <div class="col-md-6 d-flex align-items-center justify-content-center">
+      <div class="p-4">
+        <h2>GREENHOUSE INSTALLATION</h2>
+        <p class="mt-3">
+          At E-Plus, we specialize in designing and installing advanced greenhouse systems 
+          that maximize crop yield, enhance efficiency, and ensure sustainable farming. 
+          Our solutions combine modern technology with durable infrastructure, providing 
+          growers with fully automated environments that support year-round cultivation 
+          of vegetables, leafy greens, and other crops.
+        </p>
+        
+        <div class="d-flex justify-content-center gap-5">
+          <button class="btn-custom">Make an Appointment</button>
+          <button class="btn-icon"><i class="bi bi-telephone"></i> Number</button>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<section class="greenhouse-solutions">
+  <div class="container">
+    <h2>OUR GREENHOUSE SOLUTIONS</h2>
+    <div class="row g-4">
+      
+      <!-- Card 1 -->
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="solution-card">
+          <img src="images/greenone.jpg" alt="Vertical Circular Tower Installation">
+          <h5>Vertical Circular Tower Installation</h5>
+          <p>Space-efficient towers that maximize crop density while ensuring easy maintenance and harvesting.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="solution-card">
+          <img src="images/greentwo.jpg" alt="A-Frame Installation">
+          <h5>A-Frame Installation</h5>
+          <p>Reliable and scalable A-frame systems ideal for large-scale production and versatile crop growth.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="solution-card">
+          <img src="images/greenthree.jpg" alt="Zip Grow Tower Installation">
+          <h5>Zip Grow Tower Installation</h5>
+          <p>Innovative hydroponic growing systems designed to enhance yield and optimize resource usage.</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="solution-card">
+          <img src="images/greenfour.jpg" alt="Automation for Climate & Fertigation">
+          <h5>Automation for Climate & Fertigation</h5>
+          <p>Smart automation regulating irrigation, nutrient delivery, and climate to achieve ideal growing conditions.</p>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="solution-card">
+          <img src="images/greenfive.jpg" alt="Fully Automated Environmental Controls">
+          <h5>Fully Automated Environmental Controls</h5>
+          <p>Integrated systems managing light, temperature, humidity, and CO₂ for optimal crop growth.</p>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="solution-card">
+          <img src="images/greensix.jpg" alt="Water Treatment & Cooling Systems">
+          <h5>Water Treatment & Cooling Systems</h5>
+          <p>Advanced filtration through R.O. systems and chillers to deliver clean, temperature-controlled water.</p>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="solution-card">
+          <img src="images/greenseven.jpg" alt="Greenhouse Structure">
+          <h5>Greenhouse Structure</h5>
+          <p>Hot-dip galvanized steel frames with polycarbonate covering, shading, and temperature/light control.</p>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="solution-card">
+          <img src="images/greeneight.jpg" alt="Processing Room Installation">
+          <h5>Processing Room Installation</h5>
+          <p>Post-harvest facilities for cutting, bubble washing, weighing, conveying, and packaging produce efficiently.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <div class="container-fluid" style="background-color: #000;color: white;">
+  <div class="container py-5">
+    <h2 class="section-title">INDUSTRIES WE SERVE</h2>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="row">
+            <div class="col-md-4"><div class="industry-card"><img src="images/greensone.jpg"><div class="industry-overlay"><h5>AGRICULTURE FARMS <i class="fas fa-arrow-right industry-arrow"></i></h5><p>Large and small-scale growers enhancing crop yields.</p></div></div></div>
+            <div class="col-md-4"><div class="industry-card"><img src="images/greenstwo.jpg"><div class="industry-overlay"><h5>FOOD PROCESSING UNITS <i class="fas fa-arrow-right industry-arrow"></i></h5><p>Ensuring quality and efficiency with state-of-the-art solutions.</p></div></div></div>
+            <div class="col-md-4"><div class="industry-card"><img src="images/greensthree.jpg"><div class="industry-overlay"><h5>RETAIL & SUPPLY CHAINS <i class="fas fa-arrow-right industry-arrow"></i></h5><p>Streamlined operations and networks for global markets.</p></div></div></div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="row">
+            <div class="col-md-4"><div class="industry-card"><img src="images/greenstwo.jpg"><div class="industry-overlay"><h5>Healthcare <i class="fas fa-arrow-right industry-arrow"></i></h5><p>Advanced systems improving patient care and efficiency.</p></div></div></div>
+            <div class="col-md-4"><div class="industry-card"><img src="images/greensone.jpg"><div class="industry-overlay"><h5>Automotive <i class="fas fa-arrow-right industry-arrow"></i></h5><p>Innovative manufacturing for future mobility.</p></div></div></div>
+            <div class="col-md-4"><div class="industry-card"><img src="images/greensthree.jpg"><div class="industry-overlay"><h5>Hospitality <i class="fas fa-arrow-right industry-arrow"></i></h5><p>Enhancing guest experiences with smart solutions.</p></div></div></div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="row">
+            <div class="col-md-4"><div class="industry-card"><img src="images/greensthree.jpg"><div class="industry-overlay"><h5>Education <i class="fas fa-arrow-right industry-arrow"></i></h5><p>Smart classrooms and modern learning facilities.</p></div></div></div>
+            <div class="col-md-4"><div class="industry-card"><img src="images/greensone.jpg"><div class="industry-overlay"><h5>Construction <i class="fas fa-arrow-right industry-arrow"></i></h5><p>Reliable systems for sustainable building projects.</p></div></div></div>
+            <div class="col-md-4"><div class="industry-card"><img src="images/greenstwo.jpg"><div class="industry-overlay"><h5>IT & Software <i class="fas fa-arrow-right industry-arrow"></i></h5><p>Powering digital transformation worldwide.</p></div></div></div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <div class="row">
+            <div class="col-md-4"><div class="industry-card"><img src="images/greensthree.jpg"><div class="industry-overlay"><h5>Education <i class="fas fa-arrow-right industry-arrow"></i></h5><p>Smart classrooms and modern learning facilities.</p></div></div></div>
+            <div class="col-md-4"><div class="industry-card"><img src="images/greensone.jpg"><div class="industry-overlay"><h5>Construction <i class="fas fa-arrow-right industry-arrow"></i></h5><p>Reliable systems for sustainable building projects.</p></div></div></div>
+            <div class="col-md-4"><div class="industry-card"><img src="images/greenstwo.jpg"><div class="industry-overlay"><h5>IT & Software <i class="fas fa-arrow-right industry-arrow"></i></h5><p>Powering digital transformation worldwide.</p></div></div></div>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="swiper-slide">
+          <div class="row">
+            <div class="col-md-4"><div class="industry-card"><img src="images/greensthree.jpg"><div class="industry-overlay"><h5>Education <i class="fas fa-arrow-right industry-arrow"></i></h5><p>Smart classrooms and modern learning facilities.</p></div></div></div>
+            <div class="col-md-4"><div class="industry-card"><img src="images/greensone.jpg"><div class="industry-overlay"><h5>Construction <i class="fas fa-arrow-right industry-arrow"></i></h5><p>Reliable systems for sustainable building projects.</p></div></div></div>
+            <div class="col-md-4"><div class="industry-card"><img src="images/greenstwo.jpg"><div class="industry-overlay"><h5>IT & Software <i class="fas fa-arrow-right industry-arrow"></i></h5><p>Powering digital transformation worldwide.</p></div></div></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination mt-4"></div>
+    </div>
+  </div>
+  </div>
+
+
+
+   <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- Logo & Description -->
+        <div class="col-md-3 col-sm-12">
+          <div class="footer-logo">
+            <img src="images/mainlogo.png" alt="E PLUS Logo">
+          </div>
+          <p>Empowering Engineering Excellence — Innovative, Sustainable, Precise, Reliable, Smart.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-3 col-sm-6 mt-4 mt-md-0">
+          <h5>QUICK LINKS</h5>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-md-3 col-sm-6 mt-4 mt-md-0">
+          <h5>SERVICES</h5>
+          <ul>
+            <li>Interiors Fit-Out</li>
+            <li>Electrical Works</li>
+            <li>Plumbing Solutions</li>
+            <li>Green House Installation</li>
+            <li>HVAC Systems</li>
+            <li>Fire Alarm & Emergency Systems</li>
+            <li>Fire Fighting Systems</li>
+            <li>ELV / Security Systems</li>
+            <li>AMC / FM Services</li>
+          </ul>
+        </div>
+
+        <!-- Address -->
+        <div class="col-md-3 col-sm-12 mt-4 mt-md-0">
+          <h5>ADDRESS</h5>
+          <p class="contact-info"><i class="fa fa-map-marker-alt"></i> PO.BOX: 81262, AL QUSAIS, DUBAI, UAE</p>
+          <p class="contact-info"><i class="fa fa-envelope"></i> info@eplusae.com</p>
+          <p class="contact-info"><i class="fa fa-phone"></i> +971 56 5622 391</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+   
+  </footer>
+   <div class="footer-bottom" style="margin-top: -1.5rem;">
+      <p>Copyright © 2025 E PLUS. All Rights Reserved</p>
+    </div>
+
+
+    
+<!-- Bootstrap JS -->
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1, 
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+      delay: 4000, 
+      disableOnInteraction: false, 
+    },
+    loop: true 
+  });
+    </script>
+</body>
+</html>

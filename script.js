@@ -48,3 +48,16 @@ function showslider(type){
 
     },timeautonext)
 }
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1, 
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+      delay: 4000, 
+      disableOnInteraction: false, 
+    },
+    loop: true 
+  });
