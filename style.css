@@ -22,7 +22,7 @@
     /* Navbar */
     .navbar-custom {
       background: #fff;
-      padding: 25px 20px;
+      padding: 5px 20px;
     }
     .navbar-brand img {
       width: 140px;
@@ -50,249 +50,7 @@
 
 
 
-.carousel {
-    
-    height: 100vh;
-    position: relative;
-    overflow: hidden;   
-    
-    
-}
 
-.carousel .list .item
-{
-    position: absolute;
-    inset: 0 0 0 0;
-}
-.carousel .list .item img
-{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-
-}
-.carousel .list .item .content
-{
-    position: absolute;
-    top: 20%;
-    color: white;
-    width: 1140px;
-    max-width: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-right: 30%;
-    box-sizing: border-box;
-    
-
-}
-.carousel .list .content .no,
-.carousel .list .content .tittle
-{
-    font-size: 45px;
-}
-.carousel .list .button
-{
-    text-align: start;
-    margin-top: 25px;
-}
-.thumbnail
-{
-    position: absolute;
-    bottom: 50px;
-    color: white;
-    left: 50%;
-    width: max-content;
-    z-index: 100;
-    display: flex;
-    gap: 20px;
-}
-.thumbnail .item
-{
-    width: 150px;
-    height: 220px;
-    flex-shrink: 0;
-    position: relative;
-}
-.thumbnail .item img
-{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-    
-
-}
-.thumbnail .item .content
-{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-}
-.arrows
-{
-    position: absolute;
-    top: 80%;
-    right: 52%;
-    width: 300px;
-    max-width: 30%;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-
-}
-.arrows button
-{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #eee4;
-    border: none;
-    color: white;
-    font-weight: bold;
-    font-size: large;
-    transition: .5s;
-    z-index: 100;
-
-}
-.arrows button:hover
-{
-    background-color: #eee;
-    color: #555;
-}
-
-.carousel .list .item:nth-child(1){
-    z-index: 1;
-}
-.carousel .list .item:nth-child(1) .no,
-.carousel .list .item:nth-child(1) .tittle,
-.carousel .list .item:nth-child(1) .button{
-    transform: translateY(50px);
-    filter: blur(20px);
-    opacity: 0;
-    animation: showcontent 0.5s 1s linear 1 forwards ;
-}
-@keyframes showcontent {
-    to{
-        opacity: 1;
-        filter: blur(0);
-        transform: translateY(0);
-    }
-}
-
-.carousel .list .item:nth-child(1) .no
-{
-    animation-delay: 1.3s;
-}
-.carousel .list .item:nth-child(1) .tittle{
-
-    animation-delay: 1.4s;
-
-}
-.carousel .list .item:nth-child(1) .button
-{
-    animation-delay: 1.8s;
-}
-
-.carousel.next .list .item:nth-child(1) img{
-
-    width: 150px;
-    height: 220px;
-    position: absolute;
-    left: 50%;
-    bottom: 50px;
-    border-radius: 20px;
-    animation: showimage 0.5s linear 1 forwards;
-}
-
-@keyframes showimage{
-    to{
-        width: 100% ;
-        height: 100%;
-        left: 0;
-        bottom: 0;
-        border-radius: 0;
-    }
-}
-
-.carousel.next .thumbnail .item :nth-last-child(1){
-    width: 0;
-    overflow: hidden;
-    animation: showthumbnail 0.5s linear 1 forwards;
-}
-@keyframes showthumbnail{
-    to{
-        width: 150px;
-    }
-}
-.carousel.next .thumbnail{
-    transform: translateX(150px);
-    animation: transformthumbnail 0.5s linear 1 forwards;
-}
-
-@keyframes transformthumbnail{
-    to{
-        transform: translateX(0);
-    }
-}
-
-.carousel.prev .list .item:nth-child(2){
-    z-index: 2;
-}
-.carousel.prev .list .item:nth-child(2) img{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    animation: outimage 0.5s linear 1 forwards;
-
-}
-@keyframes outimage{
-    to
-    {
-        width: 150px;
-        height: 220px;
-        border-radius: 20px;
-        left: 50%;;
-        bottom: 50px
-;
-    }
-}
-.carousel.prev .thumbnail .item:nth-child(1){
-    width: 0;
-    overflow: hidden;
-    opacity: 0;
-    animation: showthumbnail 0.5s linear 1 forwards;
-}
-
-.carousel.prev .list .item:nth-child(2).no,
-.carousel.prev .list .item:nth-child(2).tittle,
-.carousel.prev .list .item:nth-child(2).button
-{
-    animation: contentout 1.5s linear forwards;
-}
-
-@keyframes contentout{
-    to{
-        transform: translateX(-150px);
-        filter: blur(20px);
-        opacity: 0;
-    }
-}
-
-.carousel.next .arrows button,
-.carousel.prev .arrows button{
-    pointer-events: none;
-}
-@media screen and (max-width:678px){
-    .carousel .list .item .content{
-        padding-right: 0;
-    }
-    .carousel .list .item .content .tittle
-    {
-        font-size: 30px;
-    }
-}
 
 
  .about-section {
@@ -1406,7 +1164,7 @@
       color: black;
     }
     .expertise-card p {
-      font-size: 14px;
+      font-size: 17px;
       color: #333;
     }
 
@@ -1489,3 +1247,314 @@
       color: #fff;
     }
 
+    .hvac-banner {
+      position: relative;
+      background: url('images/hvac.jpg') no-repeat center center/cover;
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    /* Dark overlay */
+    .hvac-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    /* Heading */
+    .hvac-banner h1 {
+      position: relative;
+      z-index: 2;
+      font-size: clamp(28px, 6vw, 60px); /* responsive font */
+      font-weight: 600;
+      margin: 0;
+    }
+
+    /* Responsive spacing */
+    @media (max-width: 768px) {
+      .hvac-banner {
+        min-height: 40vh;
+        padding: 40px 15px;
+      }
+    }
+
+      .expertises-section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .expertises-title {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+      color: white;
+      
+    }
+
+    .expertises-heading {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      
+    }
+
+    .expertises-card {
+      background: #fff;
+      color: #000;
+      text-align: left;
+      padding: 25px;
+      border-radius: 4px;
+      margin-bottom: 30px;
+      min-height: 220px;
+      position: relative;
+      transition: all 0.3s ease;
+      margin-right: 60px;
+    }
+    @media(max-width:550px)
+    {
+      .expertises-card
+      {
+        margin-right: 0px;
+      }
+    }
+
+    /* Number box styled outside card */
+    .number-box {
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      background: #fff;
+      padding: 16px 16px;
+      font-weight: bold;
+      font-size: 18px;
+      
+      transition: all 0.3s ease;
+      border: rgba(85, 85, 85, 1) 10px solid;
+    }
+
+    .expertises-card h5 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: -20px; /* space below number box */
+      margin-bottom: 10px;
+      margin-left: 50px;
+    }
+
+    .expertises-card p {
+      font-size: 17px;
+      margin-top: 30px;
+    }
+
+    /* Hover effect */
+    .expertises-card:hover {
+      background: rgba(205, 154, 97, 1);
+      color: #fff;
+      transform: translateY(-5px);
+    }
+
+    .expertises-card:hover .number-box {
+      background: rgba(205, 154, 97, 1);
+      color: #fff;
+    }
+
+    /* Highlight card (Card 2 stays colored) */
+    .expertises-card.highlight {
+      background: rgba(205, 154, 97, 1);
+      color: #fff;
+    }
+
+    .expertises-card.highlight .number-box {
+      background: rgba(205, 154, 97, 1);
+      color: #fff;
+    }
+    
+
+   .solutions-section {
+      background-color: #fff;
+      padding: 60px 0;
+      position: relative;
+    }
+
+    /* Solution Cards (Default Desktop >1000px) */
+    .solutions-card {
+       background-color: rgba(205, 154, 97, 0.7);
+      padding: 25px;
+      height: 300px;   /* fixed desktop */
+      margin-top: 2.5rem;
+      margin-right: 50px;
+      color: black;
+    }
+
+    .solutions-card h5 {
+      font-weight: 700;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .solutions-card p {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-top: 40px;
+    }
+    @media(max-width:1200px)
+    {
+      .solutions-card p
+      {
+        font-size: 15px;
+      }
+    }
+    @media(max-width:550px)
+    {
+      .solutions-card p
+      {
+        font-size: 18px;
+      }
+    }
+
+    .endin {
+      font-size: 18px;
+    }
+    @media(max-width:920px)
+    {
+      .endin
+      {
+        margin-top: 40px;
+      }
+    }
+    @media(max-width:550px)
+    {
+      .endin
+      {
+        margin-top: 40px;
+      }
+    }
+
+    /* 🔹 Tablet: 768px–1000px */
+    @media (max-width: 1000px) and (min-width: 768px) {
+      .solutions-card {
+        height: 250px;   /* slightly smaller */
+        margin-right: 20px;
+        margin-top: 1rem;
+      }
+      .solutions-card h5 {
+        font-size: 16px;
+      }
+      .solutions-card p {
+        font-size: 16px;
+        margin-top: 20px;
+      }
+    }
+
+    /* 🔹 Mobile: <768px */
+    @media (max-width: 767px) {
+      .solutions-card {
+        height: auto;   /* let content decide height */
+        width: 100%;    /* full width */
+        margin-right: 0;
+        margin-top: 1rem;
+      }
+      .solutions-card h5 {
+        font-size: 16px;
+      }
+      .solutions-card p {
+        font-size: 15px;
+        margin-top: 15px;
+      }
+    }
+
+    /* Carousel Indicators */
+    .carousel-indicators {
+      position: static;
+      margin-top: 20px;
+    }
+    .carousel-indicators [data-bs-target] {
+      width: 30px;
+      height: 5px;
+      background-color: #bbb;
+      border-radius: 3px;
+    }
+    .carousel-indicators .active {
+      background-color: #c99666;
+      width: 35px;
+    }
+
+    /* Title Box Responsive */
+    @media (max-width: 992px) {
+      .solutions-title-box {
+        font-size: 22px;
+        padding: 50px 20px;
+      }
+    }
+
+    .elec-banner {
+      position: relative;
+      background: url('images/electricalban.jpg') no-repeat center center/cover;
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    /* Dark overlay */
+    .elec-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    /* Heading */
+    .elec-banner h1 {
+      position: relative;
+      z-index: 2;
+      font-size: clamp(28px, 6vw, 60px); /* responsive font */
+      font-weight: 600;
+      margin: 0;
+    }
+
+    /* Responsive spacing */
+    @media (max-width: 768px) {
+      .elec-banner {
+        min-height: 40vh;
+        padding: 40px 15px;
+      }
+    }
+    .elec-section {
+      position: relative;
+      background: url('images/electricalfoot.jpg') no-repeat center center/cover;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }
+    .hvac-section {
+      position: relative;
+      background: url('images/hvac.jpg') no-repeat center center/cover;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }
+    .green-section {
+      position: relative;
+      background: url('images/greenfoot.jpg') no-repeat center center/cover;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }
