@@ -47,8 +47,17 @@
       font-size: 18px;
       padding: 10px 0;
     }
+.dropdown-item
+{
+  padding: 10px;
+  font-weight: 600;
+}
 
-
+.dropdown-item:hover
+{
+  background-color: rgba(205, 154, 97, 1);
+  color: white;
+}
 
 
 
@@ -233,7 +242,7 @@
     }
 
      .portfolio-section {
-      background: #4a4a4a; /* Dark background */
+      background:  rgba(85, 85, 85, 1); /* Dark background */
       color: #fff;
       padding: 70px 20px;
       font-family: "Times New Roman", Times, serif;
@@ -1553,6 +1562,473 @@
     .green-section {
       position: relative;
       background: url('images/greenfoot.jpg') no-repeat center center/cover;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }
+
+     .facility-card {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      color: #000;
+      height: 100%;
+      margin-right: 40px;
+    }
+    @media(max-width:550px)
+    {
+      .facility-card
+      {
+        margin-right: 0px;
+      }
+    }
+
+    .facility-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .facility-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, rgba(205, 154, 97, 1), rgba(212, 212, 212, 0.9));
+      z-index: 2;
+    }
+
+    .facility-content {
+      position: relative;
+      z-index: 3;
+      padding: 60px 25px;
+      padding-top: 90px;
+    }
+
+    /* Number with Lines */
+    .facility-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .facility-number::before,
+    .facility-number::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: #000;
+    }
+
+    .facility-number span {
+      font-size: 22px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .facility-content h5 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: start;
+    }
+
+    .facility-content p {
+      font-size: 17px;
+      margin: 0;
+      text-align: start;
+    }
+
+    .amc-banner {
+      position: relative;
+      background: url('images/amcban.jpg') no-repeat center center/cover;
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    /* Dark overlay */
+    .amc-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    /* Heading */
+    .amc-banner h1 {
+      position: relative;
+      z-index: 2;
+      font-size: clamp(28px, 6vw, 60px); /* responsive font */
+      font-weight: 600;
+      margin: 0;
+    }
+
+    /* Responsive spacing */
+    @media (max-width: 768px) {
+      .amc-banner {
+        min-height: 40vh;
+        padding: 40px 15px;
+      }
+    }
+     .solutionsss-section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .solutionsss-section h2 {
+      color: #fff;
+      font-size: 25px;
+      font-weight: 500;
+      margin-bottom: 50px;
+      letter-spacing: 1px;
+    }
+
+    .solutionsss-card {
+      position: relative;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      padding: 60px 20px 20px; /* top padding for image space */
+      text-align: center;
+      margin-top: 60px; /* to adjust floating image */
+      transition: transform 0.3s;
+      margin-bottom: 30px;
+    }
+
+    .solutionsss-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .solutionsss-card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 10px solid #c69c6d; /* Gold border */
+      position: absolute;
+      top: -85px; /* half of image height */
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fff;
+    }
+
+    .solutionsss-card h5 {
+      font-size: 17px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #333;
+      margin: 0;
+      margin-top: 15px;
+    }
+     .servicess-section {
+      padding: 60px 20px;
+      text-align: center;
+      margin-top: -3.2rem;
+    }
+
+    .servicess-section h2 {
+      font-size: 23px;
+      font-weight: 500;
+      margin-bottom: 40px;
+      letter-spacing: 1px;
+      
+    }
+
+    .servicess-card {
+      position: relative;
+      height: 320px;
+      border-radius: 0;
+      overflow: hidden;
+      color: #fff;
+      margin-left: -15px;
+      
+    }
+
+    .servicess-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .servicess-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .overlayss {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+      z-index: 1;
+    }
+
+    .servicess-content {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      z-index: 2;
+      text-align: left;
+    }
+
+    .servicess-content h5 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .servicess-content p {
+      font-size: 17px;
+      margin: 0;
+    }
+
+    .servicess-number {
+      position: absolute;
+      bottom: 20px;
+      right: 15px;
+      font-size: 40px;
+      font-weight: bold;
+      color: #fff;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      z-index: 2;
+      opacity: 0.9;
+    }
+     .os-section {
+      position: relative;
+      background: url('images/alaramback.jpg') center/cover no-repeat;
+      color: #fff;
+      padding: 80px 0;
+    }
+    .os-section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(85, 85, 85, 0.8);
+      z-index: 1;
+    }
+    .os-container {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Card Styling */
+    .os-card {
+      text-align: center;
+      margin-bottom: 50px;
+      position: relative;
+    }
+
+    /* Number circle */
+    .os-number {
+      background: #fff;
+      color: #000;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+      position: relative;
+      top: 50px;
+      left: 44px;
+    }
+
+    /* Circular image */
+    .os-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 20px;
+    }
+    .os-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .os-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .os-desc {
+      font-size: 14px;
+      color: #eaeaea;
+      max-width: 250px;
+      margin: 0 auto;
+    }
+
+    .alarm-banner {
+      position: relative;
+      background: url('images/falramban.jpg') no-repeat center center/cover;
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    /* Dark overlay */
+    .alarm-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    /* Heading */
+    .alarm-banner h1 {
+      position: relative;
+      z-index: 2;
+      font-size: clamp(28px, 6vw, 60px); /* responsive font */
+      font-weight: 600;
+      margin: 0;
+    }
+
+    /* Responsive spacing */
+    @media (max-width: 768px) {
+      .alarm-banner {
+        min-height: 40vh;
+        padding: 40px 15px;
+      }
+    }
+     .alarm-section {
+      position: relative;
+      background: url('images/alaramfoot.jpg') no-repeat center center/cover;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }
+     .amc-section {
+      position: relative;
+      background: url('images/amcfoot.jpg') no-repeat center center/cover;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }
+
+    .inter-banner {
+      position: relative;
+      background: url('images/interiorban.jpg') no-repeat center center/cover;
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    /* Dark overlay */
+    .inter-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    /* Heading */
+    .inter-banner h1 {
+      position: relative;
+      z-index: 2;
+      font-size: clamp(28px, 6vw, 60px); /* responsive font */
+      font-weight: 600;
+      margin: 0;
+    }
+
+    /* Responsive spacing */
+    @media (max-width: 768px) {
+      .inter-banner {
+        min-height: 40vh;
+        padding: 40px 15px;
+      }
+    }
+     .inter-section {
+      position: relative;
+      background: url('images/interiorfoot.jpg') no-repeat center center/cover;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }
+
+
+     .sec-banner {
+      position: relative;
+      background: url('images/securityban.jpg') no-repeat center center/cover;
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    /* Dark overlay */
+    .sec-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    /* Heading */
+    .sec-banner h1 {
+      position: relative;
+      z-index: 2;
+      font-size: clamp(28px, 6vw, 60px); /* responsive font */
+      font-weight: 600;
+      margin: 0;
+    }
+
+    /* Responsive spacing */
+    @media (max-width: 768px) {
+      .sec-banner {
+        min-height: 40vh;
+        padding: 40px 15px;
+      }
+    }
+     .sec-section {
+      position: relative;
+      background: url('images/alaramfoot.jpg') no-repeat center center/cover;
       min-height: 60vh;
       display: flex;
       align-items: center;
