@@ -2034,3 +2034,330 @@
       align-items: center;
       color: #fff;
     }
+
+      .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .accordion-button {
+  background-color: #fff;
+  color: #000;
+  font-weight: 600;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 15px;
+}
+
+/* Remove Bootstrap default arrow */
+.accordion-button::after {
+  background-image: none !important;
+  content: "+";              /* show + */
+  font-size: 20px;
+  color: #000;
+  transform: none !important;
+}
+
+/* When open → change to - */
+.accordion-button:not(.collapsed)::after {
+  content: "-";
+  color: #fff !important;   /* white when active */
+}
+
+    
+
+    .accordion-item {
+      border: none;
+      border-bottom: 1px solid #000;
+      margin-bottom: 15px;
+    }
+
+    .accordion-body {
+      background: #fff;
+      color: #000;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    /* Highlight first accordion */
+    .accordion-button.highlight {
+      background: #d19a64;
+      color: #fff;
+    }
+
+    .accordion-button.highlight::after {
+      color: #fff;
+    }
+
+    /* Divider line in center */
+    .divider {
+      border-left: 3px solid #fff;
+      height: 100%;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 991px) {
+      .divider {
+        display: none;
+      }
+    }
+    /* Active accordion background color */
+.accordion-button:not(.collapsed) {
+  background-color: #d19a64 !important;
+  color: #fff !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  color: #fff !important;
+}
+.lnf
+{
+    margin-left: -2rem;
+}
+@media(max-width:550px)
+{
+    .lnf
+    {
+        margin-left: 0px;
+    }
+}
+
+.service-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 4px;
+      margin-right: 30px;
+    }
+    .service-card img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .service-card:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Overlay */
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.7);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    .service-card:hover .overlay {
+      opacity: 1;
+    }
+
+    /* Bottom strip */
+    .bottom-strip {
+      background: #d39752; /* orange-gold */
+      color: #fff;
+      font-weight: 500;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+    }
+    .bottom-strip i {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .service-card p
+    {
+      font-size: 18px;
+    }
+    .bottom-strip span {
+
+      font-size: 18px;
+      text-align: center;
+
+    }
+
+    .mep-banner {
+      position: relative;
+      background: url('images/mepban.jpg') no-repeat center center/cover;
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    /* Dark overlay */
+    .mep-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    /* Heading */
+    .mep-banner h1 {
+      position: relative;
+      z-index: 2;
+      font-size: clamp(28px, 6vw, 60px); /* responsive font */
+      font-weight: 600;
+      margin: 0;
+    }
+
+    /* Responsive spacing */
+    @media (max-width: 768px) {
+      .mep-banner {
+        min-height: 40vh;
+        padding: 40px 15px;
+      }
+    }
+     .plumb-section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .plumb-section h2 {
+      font-size: 22px;
+      margin-bottom: 40px;
+    }
+
+    .plumb-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      cursor: pointer;
+      height: 100%;
+    }
+
+    .plumb-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.4s ease;
+    }
+
+    .plumb-card:hover img {
+      transform: scale(1.1);
+    }
+
+    /* Black overlay on all images */
+    .plumb-overlay-dark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 12px;
+      z-index: 1;
+    }
+
+    /* Title inside image */
+    .plumb-title {
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 8px 15px;
+      border-radius: 6px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #fff;
+      transition: opacity 0.3s ease;
+      z-index: 2;
+    }
+
+    /* Hide title on hover */
+    .plumb-card:hover .plumb-title {
+      opacity: 0;
+    }
+
+    /* Hover content box */
+    .plumb-overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.8);
+      background: #d19a64;
+      color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 500;
+      opacity: 0;
+      transition: all 0.4s ease;
+      width: 80%;
+      max-width: 250px;
+      line-height: 1.4;
+      z-index: 3;
+    }
+
+    .plumb-card:hover .plumb-overlay-text {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .pl-banner {
+      position: relative;
+      background: url('images/plumbingban.jpg') no-repeat center center/cover;
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    /* Dark overlay */
+    .pl-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    /* Heading */
+    .pl-banner h1 {
+      position: relative;
+      z-index: 2;
+      font-size: clamp(28px, 6vw, 60px); /* responsive font */
+      font-weight: 600;
+      margin: 0;
+    }
+
+    /* Responsive spacing */
+    @media (max-width: 768px) {
+      .pl-banner {
+        min-height: 40vh;
+        padding: 40px 15px;
+      }
+    }
+    .pl-section {
+      position: relative;
+      background: url('images/plfoot.jpg') no-repeat center center/cover;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }

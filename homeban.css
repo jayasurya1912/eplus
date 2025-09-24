@@ -20,20 +20,19 @@
 
 
 }
-.carousel .list .item .content
-{
+.carousel .list .item .content {
     position: absolute;
     top: 20%;
+    left: 80px;         /* push it from left edge */
+    transform: none;    /* remove centering */
+    width: 600px;       /* restrict width */
+    max-width: 90%;
     color: white;
-    width: 1140px;
-    max-width: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-right: 30%;
+    text-align: left;   /* keep text aligned left */
+    padding-right: 0;   /* remove extra right padding */
     box-sizing: border-box;
-    
-
 }
+
 .carousel .list .content .no,
 .carousel .list .content .tittle
 {
@@ -53,7 +52,7 @@
     width: max-content;
     z-index: 100;
     display: flex;
-    gap: 20px;
+    gap: 20px; 
 }
 .thumbnail .item
 {
@@ -87,7 +86,7 @@
     max-width: 30%;
     display: flex;
     gap: 10px;
-    align-items: center;
+    align-items: center;  
 
 }
 .arrows button
@@ -143,19 +142,18 @@
     animation-delay: 1.8s;
 }
 
-.carousel.next .list .item:nth-child(1) img{
-
+.carousel.next .list .item:nth-child(1) img {
     width: 150px;
     height: 220px;
     position: absolute;
     left: 50%;
     bottom: 50px;
     border-radius: 20px;
-    animation: showimage 0.5s linear 1 forwards;
+    animation: showImage 0.5s linear 1 forwards; /* fixed case */
 }
 
-@keyframes showimage{
-    to{
+@keyframes showImage {
+    to {
         width: 100% ;
         height: 100%;
         left: 0;
@@ -164,11 +162,18 @@
     }
 }
 
-.carousel.next .thumbnail .item :nth-last-child(1){
+.carousel.next .thumbnail .item:nth-last-child(1) { /* fixed selector */
     width: 0;
     overflow: hidden;
     animation: showthumbnail 0.5s linear 1 forwards;
 }
+
+.carousel.prev .list .item:nth-child(2) .no,  /* fixed selector */
+.carousel.prev .list .item:nth-child(2) .tittle,
+.carousel.prev .list .item:nth-child(2) .button {
+    animation: contentout 1.5s linear forwards;
+}
+
 @keyframes showthumbnail{
     to{
         width: 150px;
@@ -241,3 +246,49 @@
         font-size: 30px;
     }
 }
+/* Fade/slide in from LEFT instead of bottom */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-120px);
+    filter: blur(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+/* Animate active big slide */
+.carousel.next .list .item:nth-child(1) .content,
+.carousel.prev .list .item:nth-child(2) .content {
+  animation: fadeInLeft 0.7s ease forwards;
+}
+
+/* Animate title and text inside with stagger */
+.carousel.next .list .item:nth-child(1) .content .title,
+.carousel.prev .list .item:nth-child(2) .content .title {
+  animation: fadeInLeft 0.7s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.carousel.next .list .item:nth-child(1) .content .name,
+.carousel.prev .list .item:nth-child(2) .content .name {
+  animation: fadeInLeft 0.7s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.carousel.next .list .item:nth-child(1) .content .des,
+.carousel.prev .list .item:nth-child(2) .content .des {
+  animation: fadeInLeft 0.7s ease forwards;
+  animation-delay: 0.6s;
+}
+@media screen and (max-width: 768px) {
+  .carousel .list .item .content {
+    left: 20px;
+    width: calc(100% - 40px);
+    top: 15%;
+  }
+}
+
