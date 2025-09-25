@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="fire-preloader" id="firePreloader">
+    <div class="fire-loader"></div>
+  </div>
+
+ <div class="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center justify-content-md-end align-items-center flex-wrap text-center text-md-end">
+          <!-- Address -->
+          <div class="location me-3">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>PO.BOX: 81262, AL QUSAIS, DUBAI, UAE</span>
+          </div>
+          <!-- Social Icons -->
+          <div class="social-icons d-flex">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom" >
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="images/mainlogo.png" alt="Logo">
+      </a>
+
+      <!-- Mobile Sidebar Trigger -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Desktop Menu -->
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link " href="index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link"  href="about.html">ABOUT US</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">SERVICES</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="interiorfitservice.html">INTERIOR FIT SERVICES</a></li>
+              <li><a class="dropdown-item" href="electricalservice.html">ELECTRICAL SERVICES</a></li>
+              <li><a class="dropdown-item" href="plumbingservice.html">PLUMBING SERVICES</a></li>
+              <li><a class="dropdown-item" href="greenhouseinstallationservice.html">GREEN HOUSE INSTALLATION SERVICES</a></li>
+              <li><a class="dropdown-item" href="hvacservice.html">HVAC SERVICES</a></li>
+              <li><a class="dropdown-item" href="firefightiningservice.html">FIRE FIGHTING SERVICES</a></li>
+              <li><a class="dropdown-item" href="firealarmservice.html">FIRE ALARM SERVICES</a></li>
+             <li><a class="dropdown-item" href="amcfacilitymanagementservice.html">AMC FACILITY MANAGEMENT SERVICES</a></li>
+            <li><a class="dropdown-item" href="securityservice.html">SECURITY SERVICES</a></li>
+            <li><a class="dropdown-item" href="mepservice.html">MEP SERVICES</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">PROJECTS</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Sidebar Menu -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
+    <div class="offcanvas-header">
+      <img src="images/mainlogo.png" width="150px" alt="">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link " href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">SERVICES</a>
+          <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="interiorfitservice.html">INTERIOR FIT SERVICES</a></li>
+              <li><a class="dropdown-item" href="electricalservice.html">ELECTRICAL SERVICES</a></li>
+              <li><a class="dropdown-item" href="plumbingservice.html">PLUMBING SERVICES</a></li>
+              <li><a class="dropdown-item" href="greenhouseinstallationservice.html">GREEN HOUSE INSTALLATION SERVICES</a></li>
+              <li><a class="dropdown-item" href="hvacservice.html">HVAC SERVICES</a></li>
+              <li><a class="dropdown-item" href="firefightiningservice.html">FIRE FIGHTING SERVICES</a></li>
+              <li><a class="dropdown-item" href="firealarmservice.html">FIRE ALARM SERVICES</a></li>
+             <li><a class="dropdown-item" href="amcfacilitymanagementservice.html">AMC FACILITY MANAGEMENT SERVICES</a></li>
+            <li><a class="dropdown-item" href="securityservice.html">SECURITY SERVICES</a></li>
+            <li><a class="dropdown-item" href="mepservice.html">MEP SERVICES</a></li>
+            </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">PROJECTS</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <section class="contact-banner">
+    <h1>Contact Us </h1>
+  </section>
+
+ <section class="contacts-section">
+    <div class="container d-flex justify-content-center">
+      <div class="contacts-form">
+        <h2>Let’s shape your <span>dream space together</span></h2>
+        <form>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                
+                <input type="text" class="form-control" placeholder="Full Name">
+                <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                
+                <input type="text" class="form-control" placeholder="Mobile Number">
+                <span class="input-group-text"><i class="fa-solid fa-mobile-screen-button"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            
+            <input type="email" class="form-control" placeholder="Email">
+            <span class="input-group-texts"><i class="fa-solid fa-envelope"></i></span>
+            
+          </div>
+          <div class="form-group">
+            
+            <textarea class="form-control" placeholder="Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="col-12">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.159377419405!2d55.38709797483961!3d25.26522352894306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5dcdb083965b%3A0xbd82345723fed653!2sEmirates%20Post%20-%20Al%20Qusais%20Post%20Office!5e0!3m2!1sen!2sin!4v1758793117107!5m2!1sen!2sin" width="1520" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+    <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <!-- Logo & Description -->
+        <div class="col-md-3 col-sm-12">
+          <div class="footer-logo">
+            <img src="images/mainlogo.png" alt="E PLUS Logo">
+          </div>
+          <p>Empowering Engineering Excellence — Innovative, Sustainable, Precise, Reliable, Smart.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-3 col-sm-6 mt-4 mt-md-0">
+          <h5>QUICK LINKS</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="interiorfitservice.html">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-md-3 col-sm-6 mt-4 mt-md-0">
+          <h5>SERVICES</h5>
+          <ul>
+            <li><a href="interiorfitservice.html" style="text-decoration: none; color: white;">Interiors Fit-Out</a></li>
+            <li><a href="electricalservice.html" style="text-decoration: none; color: white;">Electrical Works</a></li>
+            <li><a href="plumbingservice.html" style="text-decoration: none; color: white;">Plumbing Solutions</a></li>
+            <li><a href="greenhouseinstallationservice.html" style="text-decoration: none; color: white;">Green House Installation</a></li>
+            <li><a href="hvacservice.html" style="text-decoration: none; color: white;">HVAC Systems</a></li>
+            <li><a href="firealarmservice.html" style="text-decoration: none; color: white;">Fire Alarm & Emergency Systems</a></li>
+            <li><a href="firefightiningservice.html" style="text-decoration: none; color: white;">Fire Fighting Systems</a></li>
+            <li><a href="securityservice.html" style="text-decoration: none; color: white;">ELV / Security Systems</a></li>
+            <li><a href="amcfacilitymanagementservice.html" style="text-decoration: none; color: white;">AMC / FM Services</a></li>
+            <li><a href="mepservice.html" style="text-decoration: none; color: white;">Mep</a></li>
+          </ul>
+        </div>
+
+        <!-- Address -->
+        <div class="col-md-3 col-sm-12 mt-4 mt-md-0">
+          <h5>ADDRESS</h5>
+          <p class="contact-info"><i class="fa fa-map-marker-alt"></i> PO.BOX: 81262, AL QUSAIS, DUBAI, UAE</p>
+          <p class="contact-info"><i class="fa fa-envelope"></i> info@eplusae.com</p>
+          <p class="contact-info"><i class="fa fa-phone"></i> +971 56 5622 391</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+   
+  </footer>
+   <div class="footer-bottom" style="margin-top: -1.5rem;">
+      <p>Copyright © 2025 E PLUS. All Rights Reserved</p>
+    </div>
+<button class="fire-scroll-top" id="fireScrollTop">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
+    
+<!-- Bootstrap JS -->
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+
+   
+</body>
+</html>

@@ -7,31 +7,52 @@
     
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
  
   <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="homeban.css">
 </head>
 <body>
 
- <div class="topbar">
-    <div class="container d-flex justify-content-between align-items-center">
-      <div>
-        
-      </div>
-      <div class="social-icons">
-        <i class="fa-solid fa-location-dot"></i> PO.BOX: 81262, AL QUSAIS, DUBAI, UAE
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+
+  <div class="fire-preloader" id="firePreloader">
+    <div class="fire-loader"></div>
+  </div>
+
+  <div class="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center justify-content-md-end align-items-center flex-wrap text-center text-md-end">
+          <!-- Address -->
+          <div class="location me-3">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>PO.BOX: 81262, AL QUSAIS, DUBAI, UAE</span>
+          </div>
+          <!-- Social Icons -->
+          <div class="social-icons d-flex">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-custom" >
     <div class="container">
       <!-- Logo -->
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="#">
         <img src="images/mainlogo.png" alt="Logo">
       </a>
 
@@ -43,24 +64,25 @@
       <!-- Desktop Menu -->
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" style="color: #d19d62;" href="index.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">SERVICES</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="greenhouseinstallationservice.html">GREEN HOUSE INSTALLATION SERVICES</a></li>
-              <li><a class="dropdown-item" href="firefightiningservice.html">FIRE FIGHTING SERVICES</a></li>
-              <li><a class="dropdown-item" href="hvacservice.html">HVAC SERVICES</a></li>
-            <li><a class="dropdown-item" href="electricalservice.html">ELECTRICAL SERVICES</a></li>
-              <li><a class="dropdown-item" href="amcfacilitymanagementservice.html">AMC FACILITY MANAGEMENT SERVICES</a></li>
-              <li><a class="dropdown-item" href="firealarmservice.html">FIRE ALARM SERVICES</a></li>
               <li><a class="dropdown-item" href="interiorfitservice.html">INTERIOR FIT SERVICES</a></li>
-            <li><a class="dropdown-item" href="plumbingservice.html">PLUMBING SERVICES</a></li>
+              <li><a class="dropdown-item" href="electricalservice.html">ELECTRICAL SERVICES</a></li>
+              <li><a class="dropdown-item" href="plumbingservice.html">PLUMBING SERVICES</a></li>
+              <li><a class="dropdown-item" href="greenhouseinstallationservice.html">GREEN HOUSE INSTALLATION SERVICES</a></li>
+              <li><a class="dropdown-item" href="hvacservice.html">HVAC SERVICES</a></li>
+              <li><a class="dropdown-item" href="firefightiningservice.html">FIRE FIGHTING SERVICES</a></li>
+              <li><a class="dropdown-item" href="firealarmservice.html">FIRE ALARM SERVICES</a></li>
+             <li><a class="dropdown-item" href="amcfacilitymanagementservice.html">AMC FACILITY MANAGEMENT SERVICES</a></li>
             <li><a class="dropdown-item" href="securityservice.html">SECURITY SERVICES</a></li>
+            <li><a class="dropdown-item" href="mepservice.html">MEP SERVICES</a></li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="#">PROJECTS</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
         </ul>
       </div>
     </div>
@@ -69,29 +91,30 @@
   <!-- Mobile Sidebar Menu -->
   <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title">E PLUS</h5>
+      <img src="images/mainlogo.png" width="150px" alt="">
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
     </div>
     <div class="offcanvas-body">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">ABOUT US</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">SERVICES</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="greenhouseinstallationservice.html">GREEN HOUSE INSTALLATION SERVICES</a></li>
-              <li><a class="dropdown-item" href="firefightiningservice.html">FIRE FIGHTING SERVICES</a></li>
-              <li><a class="dropdown-item" href="hvacservice.html">HVAC SERVICES</a></li>
-            <li><a class="dropdown-item" href="electricalservice.html">ELECTRICAL SERVICES</a></li>
-              <li><a class="dropdown-item" href="amcfacilitymanagementservice.html">AMC FACILITY MANAGEMENT SERVICES</a></li>
-              <li><a class="dropdown-item" href="firealarmservice.html">FIRE ALARM SERVICES</a></li>
               <li><a class="dropdown-item" href="interiorfitservice.html">INTERIOR FIT SERVICES</a></li>
-            <li><a class="dropdown-item" href="plumbingservice.html">PLUMBING SERVICES</a></li>
+              <li><a class="dropdown-item" href="electricalservice.html">ELECTRICAL SERVICES</a></li>
+              <li><a class="dropdown-item" href="plumbingservice.html">PLUMBING SERVICES</a></li>
+              <li><a class="dropdown-item" href="greenhouseinstallationservice.html">GREEN HOUSE INSTALLATION SERVICES</a></li>
+              <li><a class="dropdown-item" href="hvacservice.html">HVAC SERVICES</a></li>
+              <li><a class="dropdown-item" href="firefightiningservice.html">FIRE FIGHTING SERVICES</a></li>
+              <li><a class="dropdown-item" href="firealarmservice.html">FIRE ALARM SERVICES</a></li>
+             <li><a class="dropdown-item" href="amcfacilitymanagementservice.html">AMC FACILITY MANAGEMENT SERVICES</a></li>
             <li><a class="dropdown-item" href="securityservice.html">SECURITY SERVICES</a></li>
-          </ul>
+            <li><a class="dropdown-item" href="mepservice.html">MEP SERVICES</a></li>
+            </ul>
         </li>
         <li class="nav-item"><a class="nav-link" href="#">PROJECTS</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
       </ul>
     </div>
   </div>
@@ -100,69 +123,53 @@
     <div class="carousel ">
         <div class="list">
             <div class="item">
-                <img src="images/1.jpg" alt="">
+                <img src="images/banone.jpg" alt="">
                 <div class="content">
-                    <div class="no">1</div>
+                    <div class="no" style="border-bottom: 3px solid white;display: inline-block;">1</div>
                     <div class="tittle">
                         Innovative Fit-Out & MEP Solutions For Every Space, Every Project
                     </div>
                     <div class="button">
-                        <a href="" class="btn"  style="background: #d19d62;
-      color: #fff;
-      border-radius: 6px;
-      padding: 12px 30px;
-      font-weight: 500;">Explore</a>
+                        <a href="contact.html" class="btn"  style="background: #d19d62;color: #fff;border-radius: 6px;padding: 12px 30px;font-weight: 500;">Request a Quote</a>
                     </div>
                 </div>
             </div>
 
             <div class="item">
-                <img src="images/2.jpg" alt="">
+                <img src="images/bantwo.jpg" alt="">
                 <div class="content">
-                    <div class="no">2</div>
+                    <div class="no" style="border-bottom: 3px solid white;display: inline-block;">2</div>
                     <div class="tittle">
                         Creative Interior Fit-Outs Crafted for Modern Living
                     </div>
                     <div class="button">
-                        <a href="" class="btn"  style="background: #d19d62;
-      color: #fff;
-      border-radius: 6px;
-      padding: 12px 30px;
-      font-weight: 500;">Explore</a>
+                        <a href="contact.html" class="btn"  style="background: #d19d62;color: #fff;border-radius: 6px;padding: 12px 30px;font-weight: 500;">Explore</a>
                     </div>
                 </div>
             </div>
 
             <div class="item">
-                <img src="images/3.jpg" alt="">
+                <img src="images/banthree.jpg" alt="">
                 <div class="content">
-                    <div class="no">3</div>
+                    <div class="no" style="border-bottom: 3px solid white;display: inline-block;">3</div>
                     <div class="tittle">
                         Transforming Spaces with Style, Function & Precision
                     </div>
                     <div class="button">
-                        <a href="" class="btn"  style="background: #d19d62;
-      color: #fff;
-      border-radius: 6px;
-      padding: 12px 30px;
-      font-weight: 500;">Explore</a>
+                        <a href="contact.html" class="btn"  style="background: #d19d62;color: #fff;border-radius: 6px;padding: 12px 30px;font-weight: 500;">Explore</a>
                     </div>
                 </div>
             </div>
 
             <div class="item">
-                <img src="images/4.jpg" alt="">
+                <img src="images/banfour.jpg" alt="">
                 <div class="content">
-                    <div class="no">4</div>
+                    <div class="no" style="border-bottom: 3px solid white;display: inline-block;">4</div>
                     <div class="tittle">
                         Tailored Interior Solutions for Homes, Offices & Beyond
                     </div>
                     <div class="button">
-                        <a href="" class="btn"  style="background: #d19d62;
-      color: #fff;
-      border-radius: 6px;
-      padding: 12px 30px;
-      font-weight: 500;">Explore</a>
+                        <a href="contact.html" class="btn"  style="background: #d19d62;color: #fff;border-radius: 6px;padding: 12px 30px;font-weight: 500;">Explore</a>
                     </div>
                 </div>
             </div>
@@ -171,31 +178,31 @@
         <div class="thumbnail">
            
             <div class="item">
-                    <img src="images/2.jpg" alt="">
+                    <img src="images/banone.jpg" alt="">
                     <div class="content">
-                        <div class="no">02</div>
+                        <div class="no" style="border-bottom: 3px solid white;display: inline-block;">02</div>
                         <div class="tittle">Creative Interior Fit-Outs Crafted for Modern Living</div>
                     </div>
             </div>
             <div class="item">
-                    <img src="images/3.jpg" alt="">
+                    <img src="images/bantwo.jpg" alt="">
                     <div class="content">
-                        <div class="no">03</div>
+                        <div class="no" style="border-bottom: 3px solid white;display: inline-block;">03</div>
                         <div class="tittle">Transforming Spaces with Style, Function & Precision</div>
                     </div>
             </div>
             <div class="item">
-                    <img src="images/4.jpg" alt="">
+                    <img src="images/banthree.jpg" alt="">
                     <div class="content">
-                        <div class="no">04</div>
+                        <div class="no" style="border-bottom: 3px solid white;display: inline-block;">04</div>
                         <div class="tittle">Tailored Interior Solutions for Homes, Offices & Beyond</div>
                     </div>
             
             </div>
              <div class="item">
-                    <img src="images/1.jpg" alt="">
+                    <img src="images/banfour.jpg" alt="">
                     <div class="content">
-                        <div class="no">01</div>
+                        <div class="no" style="border-bottom: 3px solid white;display: inline-block;">01</div>
                         <div class="tittle">Innovative Fit-Out & MEP Solutions For Every Space, Every Project</div>
                     </div>
             </div>
@@ -218,11 +225,11 @@
       
       <!-- Left Image -->
       <div class="col-lg-6 mb-4 mb-lg-0 about-image">
-        <img src="images/abtn.jpg" alt="About Us" style="height: 600px;">
+        <img src="images/abtn.jpg" alt="About Us" style="height: 700px;">
       </div>
 
       <!-- Right Content -->
-      <div class="col-lg-6 about-content">
+      <div class="col-lg-6 endin about-content">
         <h6>About Us</h6>
         <h2>Building Excellence Through Complete <br> Fit-Out &amp; MEP Solutions</h2>
         <p><em>E PLUS EMC</em></p>
@@ -243,7 +250,7 @@
           At E Plus, we combine technical expertise with a customer-first approach, positioning 
           ourselves as a trusted partner for sustainable and reliable infrastructure solutions.
         </p>
-        <button class="about-btn">Know More</button>
+        <a href="about.html" class="btn about-btn">Know More</a>
       </div>
     </div>
   </div>
@@ -257,9 +264,9 @@
       <!-- 1 -->
       <div class="col-12 col-md-6 col-lg-3 stats-divider">
         <div class="stats-box">
-          <i class="fa-solid fa-user-hard-hat"></i>
+          <i class="fa-solid fa-helmet-safety"></i>
           <div class="stats-text text-start">
-            <h3>40+</h3>
+            <h3 class="counter" data-target="40">0</h3>
             <p>Expert Workers</p>
           </div>
         </div>
@@ -270,7 +277,7 @@
         <div class="stats-box">
           <i class="fa-solid fa-building"></i>
           <div class="stats-text text-start">
-            <h3>100+</h3>
+            <h3 class="counter" data-target="100">0</h3>
             <p>Happy Clients</p>
           </div>
         </div>
@@ -281,7 +288,7 @@
         <div class="stats-box">
           <i class="fa-regular fa-building"></i>
           <div class="stats-text text-start">
-            <h3>150+</h3>
+            <h3 class="counter" data-target="150">0</h3>
             <p>Completed Projects</p>
           </div>
         </div>
@@ -290,9 +297,9 @@
       <!-- 4 -->
       <div class="col-12 col-md-6 col-lg-3">
         <div class="stats-box">
-          <i class="fa-solid fa-tower-crane"></i>
+          <i class="fa-solid fa-screwdriver-wrench"></i>
           <div class="stats-text text-start">
-            <h3>30+</h3>
+            <h3 class="counter" data-target="30">0</h3>
             <p>Running Projects</p>
           </div>
         </div>
@@ -308,32 +315,68 @@
       <div class="row g-4">
         <!-- Left Card -->
         <div class="col-lg-6">
-          <div class="service-card">
-            <img src="images/servone.jpg" alt="Interiors Fit-Out">
-            <div class="service-text mt-3">
-              <h5>Interiors Fit-Out</h5>
-              <p>At E Plus, we specialize in end-to-end interior fitout solutions, blending functionality with elegance. From design to execution, we create spaces that inspire.</p>
+          <div class="services-card">
+            <img src="images/servone.jpg" width="100%" alt="Interiors Fit-Out">
+            <div class="services-text mt-3">
+              <h5 class="mt-3">Interiors Fit-Out</h5>
+              <p class="mt-4">At E Plus, we specialize in end-to-end interior fitout solutions, blending functionality with elegance. From design to execution, we create spaces that inspire.</p>
             </div>
           </div>
         </div>
         <!-- Right Card -->
         <div class="col-lg-6">
-          <div class="service-card">
-            <img src="images/servtwo.jpg" alt="MEP Works" style="height: 480px;">
-            <div class="service-text mt-3">
-              <h5>MEP WORKS</h5>
-              <p>E-Plus provides end-to-end Mechanical, Electrical & Plumbing (MEP) solutions that ensure safety, efficiency, and reliability. Our expert team delivers seamless design, installation, and maintenance tailored to your facility’s needs.</p>
+          <div class="services-card">
+            <img src="images/servtwo.jpg" height="478px"  alt="MEP Works">
+            <div class="services-text mt-3">
+              <h5 class="mt-3">MEP WORKS</h5>
+              <p class="mt-4">E-Plus provides end-to-end Mechanical, Electrical & Plumbing (MEP) solutions that ensure safety, efficiency, and reliability. Our expert team delivers seamless design, installation, and maintenance tailored to your facility’s needs.</p>
             </div>
           </div>
         </div>
       </div>
       <!-- Button -->
       <div class="text-center mt-5">
-        <a href="#" class="btn btn-customs" style="background: #d19d62;
-      color: #fff;
-      border-radius: 6px;
-      padding: 12px 30px;
-      font-weight: 500;">View Our Services</a>
+        <a href="#" class="btn btn-customs" style="background: rgba(205, 154, 97, 1);color: #fff;border-radius: 6px;padding: 12px 30px;font-weight: 500;font-family: 'Open Sans', sans-serif;">View Our Services</a>
+      </div>
+    </div>
+  </section>
+
+
+  
+
+
+<section class="process-section container-fluid">
+    <h2 class="process-title">OUR INTERIOR FIT-OUT PROCESS</h2>
+
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Left Side Image -->
+        <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+          <img src="images/processim.jpeg" alt="Interior" class="process-img">
+          <div class="process-desc">
+            <h5>CONSULTATION & CONCEPTUALIZATION</h5>
+            <p>
+              Bring your vision to life with E-Plus Interior Fit-Outs. 
+              We start by understanding your goals and creating concepts 
+              that balance functionality with style.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Side Content -->
+        <div class="col-lg-6 col-md-12">
+          <div class="process-steps mb-4">
+            <div class="process-step">DESIGN & PLANNING <span class="line"></span></div>
+            <div class="process-step">APPROVALS & PROCUREMENT <span class="line"></span></div>
+            <div class="process-step">EXECUTION & INSTALLATION <span class="line"></span></div>
+            <div class="process-step">BUDGET & ESTIMATE <span class="line"></span></div>
+            <div class="process-step">AUTHORITY INSPECTIONS & APPROVALS <span class="line"></span></div>
+            <div class="process-step">HANDOVER & AFTERCARE <span class="line"></span></div> <!-- ✅ now always has border -->
+          </div>
+
+          
+        </div>
       </div>
     </div>
   </section>
@@ -390,7 +433,7 @@
         <div class="portfolio-item">
           <img src="images/portfive.jpg" alt="Lobby Area">
           <div class="portfolio-overlay">
-            <h4>Lobby Area</h4>
+            <h4>Lobby Area </h4>
             <span>[HOSPITALITY]</span>
           </div>
         </div>
@@ -408,43 +451,6 @@
     </div>
   </div>
 </section>
-
-
-<section class="process-section container-fluid">
-    <h2 class="process-title">OUR INTERIOR FIT-OUT PROCESS</h2>
-
-    <div class="container">
-      <div class="row align-items-center">
-        
-        <!-- Left Side Image -->
-        <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
-          <img src="images/processimg.png" alt="Interior" class="process-img">
-          <div class="process-desc">
-            <h5>CONSULTATION & CONCEPTUALIZATION</h5>
-            <p>
-              Bring your vision to life with E-Plus Interior Fit-Outs. 
-              We start by understanding your goals and creating concepts 
-              that balance functionality with style.
-            </p>
-          </div>
-        </div>
-
-        <!-- Right Side Content -->
-        <div class="col-lg-6 col-md-12">
-          <div class="process-steps mb-4">
-            <div class="process-step">DESIGN & PLANNING</div>
-            <div class="process-step">APPROVALS & PROCUREMENT</div>
-            <div class="process-step">EXECUTION & INSTALLATION</div>
-            <div class="process-step">BUDGET & ESTIMATE</div>
-            <div class="process-step">AUTHORITY INSPECTIONS & APPROVALS</div>
-            <div class="process-step">HANDOVER & AFTERCARE</div> <!-- ✅ now always has border -->
-          </div>
-
-          
-        </div>
-      </div>
-    </div>
-  </section>
 
 
  <section class="clients-section">
@@ -505,9 +511,9 @@
     </div>
   </section>
 
- <section class="contact-section">
+ <section class="contacts-section">
     <div class="container d-flex justify-content-center">
-      <div class="contact-form">
+      <div class="contacts-form">
         <h2>Let’s shape your <span>dream space together</span></h2>
         <form>
           <div class="row">
@@ -515,21 +521,25 @@
               <div class="form-group">
                 
                 <input type="text" class="form-control" placeholder="Full Name">
+                <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
                 
                 <input type="text" class="form-control" placeholder="Mobile Number">
+                <span class="input-group-text"><i class="fa-solid fa-mobile-screen-button"></i></span>
               </div>
             </div>
           </div>
           <div class="form-group">
             
             <input type="email" class="form-control" placeholder="Email">
+            <span class="input-group-texts"><i class="fa-solid fa-envelope"></i></span>
+            
           </div>
           <div class="form-group">
-            <span class="input-group-text"><i class="fa fa-comment"></i></span>
+            
             <textarea class="form-control" placeholder="Message"></textarea>
           </div>
           <button type="submit" class="btn btn-submit">Submit</button>
@@ -559,11 +569,11 @@
         <div class="col-md-3 col-sm-6 mt-4 mt-md-0">
           <h5>QUICK LINKS</h5>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="interiorfitservice.html">Services</a></li>
             <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
 
@@ -571,15 +581,16 @@
         <div class="col-md-3 col-sm-6 mt-4 mt-md-0">
           <h5>SERVICES</h5>
           <ul>
-            <li>Interiors Fit-Out</li>
-            <li>Electrical Works</li>
-            <li>Plumbing Solutions</li>
-            <li>Green House Installation</li>
-            <li>HVAC Systems</li>
-            <li>Fire Alarm & Emergency Systems</li>
-            <li>Fire Fighting Systems</li>
-            <li>ELV / Security Systems</li>
-            <li>AMC / FM Services</li>
+            <li><a href="interiorfitservice.html" style="text-decoration: none; color: white;">Interiors Fit-Out</a></li>
+            <li><a href="electricalservice.html" style="text-decoration: none; color: white;">Electrical Works</a></li>
+            <li><a href="plumbingservice.html" style="text-decoration: none; color: white;">Plumbing Solutions</a></li>
+            <li><a href="greenhouseinstallationservice.html" style="text-decoration: none; color: white;">Green House Installation</a></li>
+            <li><a href="hvacservice.html" style="text-decoration: none; color: white;">HVAC Systems</a></li>
+            <li><a href="firealarmservice.html" style="text-decoration: none; color: white;">Fire Alarm & Emergency Systems</a></li>
+            <li><a href="firefightiningservice.html" style="text-decoration: none; color: white;">Fire Fighting Systems</a></li>
+            <li><a href="securityservice.html" style="text-decoration: none; color: white;">ELV / Security Systems</a></li>
+            <li><a href="amcfacilitymanagementservice.html" style="text-decoration: none; color: white;">AMC / FM Services</a></li>
+            <li><a href="mepservice.html" style="text-decoration: none; color: white;">Mep</a></li>
           </ul>
         </div>
 
@@ -599,11 +610,15 @@
    <div class="footer-bottom" style="margin-top: -1.5rem;">
       <p>Copyright © 2025 E PLUS. All Rights Reserved</p>
     </div>
+     <button class="fire-scroll-top" id="fireScrollTop">
+    <i class="bi bi-arrow-up-short"></i>
+  </button>
 
 
     
 <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

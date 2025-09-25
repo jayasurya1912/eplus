@@ -1,3 +1,19 @@
+ window.addEventListener("load", () => {
+      const preloader = document.getElementById("firePreloader");
+      preloader.classList.add("fire-hidden");
+    });
+    const scrollBtn = document.getElementById("fireScrollTop");
+
+    window.addEventListener("scroll", () => {
+      scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+
+    scrollBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+
+
 let nextDom = document.getElementById('next');
 let prevDom = document.getElementById('prev');
 let carouselDom = document.querySelector('.carousel');
@@ -49,6 +65,45 @@ function showslider(type){
 
     },timeautonext)
 }
+  document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".counter");
+
+    const options = {
+      threshold: 0.5
+    };
+
+    const startCounter = (entry) => {
+      if (entry.isIntersecting) {
+        const counter = entry.target;
+        const target = +counter.getAttribute("data-target");
+        const duration = 2000; // 2 seconds
+        const step = Math.ceil(target / (duration / 20));
+        let count = 0;
+
+        const updateCounter = () => {
+          count += step;
+          if (count < target) {
+            counter.textContent = count + "+";
+            setTimeout(updateCounter, 20);
+          } else {
+            counter.textContent = target + "+";
+          }
+        };
+
+        updateCounter();
+        observer.unobserve(counter);
+      }
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(startCounter);
+    }, options);
+
+    counters.forEach(counter => observer.observe(counter));
+  });
+
+  
+
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1, 
@@ -62,3 +117,4 @@ var swiper = new Swiper(".mySwiper", {
     },
     loop: true 
   });
+ 
