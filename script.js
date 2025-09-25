@@ -12,6 +12,8 @@
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
 
+    AOS.init();
+
 
 
 let nextDom = document.getElementById('next');
