@@ -1260,12 +1260,13 @@
     }
 
     .industry-card:hover .industry-overlay p {
-      max-height: 100px;
+      max-height: 300px;
       opacity: 1;
+      
       
     }
     .industry-card:hover .industry-overlay  {
-      max-height: 100px;
+      max-height: 150px;
       opacity: 1;
       bottom: 0px;
       
