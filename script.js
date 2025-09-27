@@ -104,6 +104,20 @@ function showslider(type){
     counters.forEach(counter => observer.observe(counter));
   });
 
+ 
+    let currentIndex = 0;
+    const track = document.getElementById('sliderTrack');
+    const totalSlides = document.querySelectorAll('.slide').length;
+
+    function moveSlide() {
+      currentIndex++;
+      if (currentIndex >= totalSlides) currentIndex = 0;
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    setInterval(moveSlide, 2000); // Auto-slide every 2 seconds
+
+
   
 
 
