@@ -94,14 +94,15 @@
       padding: 5px 20px;
     }
     .navbar-brand img {
-      width: 160px;
+      width: 200px;
+      height: 95px;
     }
     .navbar-nav .nav-link {
       font-weight: 600;
       margin-left: 20px;
       color: #000;
       font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-      font-size: 18px;
+      font-size: 15px;
 
     }
     .navbar-nav .nav-link.active {
@@ -124,6 +125,7 @@
 {
   padding: 10px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 .dropdown-item:hover
@@ -247,7 +249,7 @@
 }
      .services-section {
       position: relative;
-      background: url('images/serban.jpg') no-repeat center center/cover;
+      background: url('images/serbanjpg') no-repeat center center/cover;
       color: #fff;
       padding: 80px 0;
       font-family: "Times New Roman", Times, serif;
@@ -257,7 +259,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.8);
+      background: black;
       z-index: 0;
     }
     .services-content {
@@ -301,7 +303,7 @@
     }
 
      .portfolio-section {
-      background:  rgba(85, 85, 85, 1); /* Dark background */
+      background: black; /* Dark background */
       color: #fff;
       padding: 70px 20px;
       font-family: "Times New Roman", Times, serif;
@@ -398,7 +400,7 @@
 
     .slide img {
       width: 100%;
-      max-height: 80px;
+      max-height: 150px;
       object-fit: contain;
       background: #fff;
       padding: 10px;
@@ -408,7 +410,7 @@
    .contacts-section {
       position: relative;
       background: url('images/formbg.jpg') no-repeat center center/cover;
-      height: 100vh;
+      height: 70vh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -449,7 +451,7 @@
 
     .form-control {
       background: transparent;
-      border: 1px solid rgba(187, 187, 187, 1);
+      border: 1px solid white;
       color: #fff;
       padding-left: 40px;
     }
@@ -463,7 +465,7 @@
 
     /* Placeholder white */
     .form-control::placeholder {
-      color:rgba(134, 132, 132, 1);
+      color:white;
       opacity: 1; 
        font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;/* ensure it's fully white */
     }
@@ -524,7 +526,8 @@
     }
 
      .footer {
-      background: rgba(127, 127, 127, 1); /* Gray background */
+      background: linear-gradient(to bottom, black, rgba(127, 127, 127, 1));
+ /* Gray background */
       color: #fff;
       padding: 60px 0 20px;
       font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
@@ -533,6 +536,10 @@
 
     .footer .footer-logo img {
       max-width: 230px;
+      background-color: white;
+      padding: 5px;
+      margin-bottom: 10px;
+      border-radius: 15px;
       
     }
     @media(max-width:920px)
@@ -547,6 +554,8 @@
       color: #f0f0f0;
       margin-bottom: 18px;
       font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+      
+      
     }
 
     .footer h5 {
