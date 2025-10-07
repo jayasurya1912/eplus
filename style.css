@@ -2729,7 +2729,7 @@
     .work-card h5 {
       font-weight: 600;
       font-size: 1.15rem;
-      color: #ff5757;
+      color: rgba(205, 154, 97, 1);
       margin-bottom: 10px;
       text-transform: uppercase;
     }
