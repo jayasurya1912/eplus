@@ -1082,7 +1082,7 @@
 
     .green-banner {
       position: relative;
-      background: url('images/greenban.jpg') no-repeat center center/cover;
+      background: url('images/vban.jpg') no-repeat center center/cover;
       min-height: 75vh;
       display: flex;
       align-items: center;
