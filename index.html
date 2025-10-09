@@ -312,7 +312,7 @@
             <a class="text-white" style="text-decoration: none;" href="verticalfarming.html">
             <img src="images/servthree.jpg" width="100&"  alt="MEP Works">
             <div class="services-text mt-3">
-              <h5 class="mt-3">Green Vertical Farming</h5>
+              <h5 class="mt-3">GREEN HOUSE VERTICAL FARMING</h5>
               <p class="mt-4">Greenhouse vertical farming is an innovative and sustainable approach to agriculture that combines controlled-environment technology with space-efficient vertical growing systems. By stacking multiple layers of crops inside a greenhouse.</p>
               </a>
             </div>
@@ -581,29 +581,7 @@
     });
   });
 </script>
-<script>
-  // Select elements
-  const steps = document.querySelectorAll(".process-step");
-  const processImage = document.getElementById("processImage");
-  const processDesc = document.getElementById("processDesc");
 
-  steps.forEach(step => {
-    step.addEventListener("click", () => {
-      // Get data attributes
-      const newImg = step.getAttribute("data-img");
-      const newTitle = step.getAttribute("data-title");
-      const newText = step.getAttribute("data-text");
-
-      // Update image + text
-      processImage.src = newImg;
-      processDesc.innerHTML = `<h5>${newTitle}</h5><p>${newText}</p>`;
-
-      // Highlight active step
-      steps.forEach(s => s.classList.remove("active-step"));
-      step.classList.add("active-step");
-    });
-  });
-</script>
     <script src="script.js"></script>
 </body>
 </html>

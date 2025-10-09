@@ -506,5 +506,29 @@
     loop: true 
   });
     </script>
+
+    <script>
+  // Select elements
+  const steps = document.querySelectorAll(".process-step");
+  const processImage = document.getElementById("processImage");
+  const processDesc = document.getElementById("processDesc");
+
+  steps.forEach(step => {
+    step.addEventListener("click", () => {
+      // Get data attributes
+      const newImg = step.getAttribute("data-img");
+      const newTitle = step.getAttribute("data-title");
+      const newText = step.getAttribute("data-text");
+
+      // Update image + text
+      processImage.src = newImg;
+      processDesc.innerHTML = `<h5>${newTitle}</h5><p>${newText}</p>`;
+
+      // Highlight active step
+      steps.forEach(s => s.classList.remove("active-step"));
+      step.classList.add("active-step");
+    });
+  });
+</script>
 </body>
 </html>
